@@ -1,0 +1,221 @@
+/* CSS RESET & BASE STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Color Palette */
+    --color-sky-base: #e0f2f7; /* accents */
+    --color-cloud-white: #ffffff; /* form background */
+    --color-cumulus-accent: #b088f9; /* accents, buttons */
+    --color-cumulus-hover: #9b6ff2; /* hover color */
+    --color-twilight-link: #4a4e69; /* text/links */
+    --color-error-red: #e74c3c; /* alert red */
+
+    /* Typography */
+    --font-header: 'Lora', serif; /* titles */
+    --font-body: 'Poppins', sans-serif; /* general text */
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-twilight-link);
+    line-height: 1.6;
+
+    /* Background Image Integration */
+    background-image: url('assets/website_bg.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+
+    /* Flexbox for Centering the Form */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* CONTAINER & FORM STYLES */
+.container {
+    background-color: var(--color-cloud-white); /* form container */
+    padding: 2.5rem 2rem; 
+    border-radius: 1.5rem; 
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 400px; /* Max width for larger screens */
+    text-align: center;
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px); 
+    border: 1px solid rgba(255, 255, 255, 0.6); 
+}
+
+h2 {
+    font-family: var(--font-header);
+    font-size: 2.2rem;
+    color: var(--color-twilight-link); 
+    margin-bottom: 2rem;
+    font-weight: 500; 
+}
+
+/* Error Message Styling */
+.error {
+    background-color: #ffebeb; /* Very light red background */
+    color: var(--color-error-red);
+    border: 1px solid var(--color-error-red);
+    padding: 0.8rem 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    display: none; 
+}
+
+.error.active-error {
+    animation: fadeIn 0.3s ease-out; /* fade in animation for errors */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* INPUT GROUPS & FIELDS */
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem; /* space between input groups */
+    text-align: left; /* align labels/placeholders */
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    padding-right: 3rem; /* space for the eye icon */
+    border: 2px solid var(--color-sky-base); 
+    border-radius: 0.75rem; /* rounded input fields */
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-twilight-link);
+    background-color: #f9fbfd; /* off-white input background */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="text"]::placeholder {
+    color: #aeb8c4; 
+    opacity: 1; /* ensure placeholder is always visible */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--color-cumulus-accent); /* accent color on focus */
+    box-shadow: 0 0 0 3px rgba(176, 136, 249, 0.2); /* soft glow on focus */
+    background-color: var(--color-cloud-white); /* white background on focus */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 1.25rem; /* adjust position */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aeb8c4; 
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+}
+
+.toggle-password:hover {
+    color: var(--color-cumulus-accent); /* accent on hover */
+}
+
+/* BUTTONS & LINKS */
+.primary-button {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin-top: 1.5rem;
+    background-color: var(--color-cumulus-accent); 
+    color: var(--color-cloud-white); /* white text on button */
+    border: none;
+    border-radius: 0.75rem;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    letter-spacing: 0.05em;
+    box-shadow: 0 5px 15px rgba(176, 136, 249, 0.3);
+}
+
+.primary-button:hover {
+    background-color: var(--color-cumulus-hover); /* on hover */
+    transform: translateY(-2px); 
+    box-shadow: 0 8px 20px rgba(176, 136, 249, 0.4); 
+}
+
+.primary-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(176, 136, 249, 0.2);
+}
+
+.forgot-link,
+.switch-link a {
+    display: inline-block;
+    color: var(--color-twilight-link); 
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+}
+
+.forgot-link:hover,
+.switch-link a:hover {
+    color: var(--color-cumulus-accent); /* accent color on hover */
+    text-decoration: underline;
+}
+
+.switch-link {
+    margin-top: 2rem; 
+    font-size: 0.95rem;
+    color: var(--color-twilight-link);
+}
+
+.switch-link a {
+    font-weight: 600; 
+}
+
+.success-text {
+    color: green;
+    font-weight: bold;
+}
+
+.error-text {
+    color: var(--color-error-red); 
+    font-weight: bold;
+}
+
+.warning-text {
+    color: orange;
+    font-size: 0.9em;
+}

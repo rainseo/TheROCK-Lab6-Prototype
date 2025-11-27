@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>The Restful Realm | Ascend to Comfort</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    
+    <h2>Ascend to Comfort</h2>
+
+    <div id="signup-error" class="error" style="display:none;"></div>
+
+    <form id="signup-form" onsubmit="return validateFullSignup();">
+        <div class="section-title">Your Celestial Identity</div>
+        
+        <div class="input-group">
+            <label for="signup-username" class="visually-hidden">Username</label>
+            <input 
+                type="text" 
+                id="signup-username" 
+                placeholder="Choose Your Realm Name" 
+                required
+            >
+        </div>
+
+        <div class="input-group">
+            <label for="signup-email" class="visually-hidden">Email Address</label>
+            <input 
+                type="email" 
+                id="signup-email" 
+                placeholder="Your Celestial Pass Email" 
+                required
+            >
+        </div>
+
+        <hr class="separator">
+
+        <div class="section-title">Set Your Realm Password</div>
+
+        <div class="input-group">
+            <label for="signup-pass" class="visually-hidden">Create Password</label>
+            <input 
+                type="password" 
+                id="signup-pass" 
+                placeholder="Create Password (Min 8 Chars)" 
+                required
+            >
+            <i class="fa-solid fa-eye toggle-password" style="color:#4A4E69;" data-target="signup-pass"></i>
+        </div>
+
+        <div class="input-group">
+            <label for="signup-confirm" class="visually-hidden">Confirm Password</label>
+            <input 
+                type="password" 
+                id="signup-confirm" 
+                placeholder="Confirm Password" 
+                required
+            >
+            <i class="fa-solid fa-eye toggle-password" style="color:#4A4E69;" data-target="signup-confirm"></i>
+        </div>
+
+        <div id="match-feedback" style="margin-top: 5px;"></div>
+
+        <button type="submit" class="primary-button">Take Flight (Sign Up)</button>
+
+        <p class="switch-link">
+            Already a part of the Realm? 
+            <a href="signin.html">Drift Back In.</a>
+        </p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
