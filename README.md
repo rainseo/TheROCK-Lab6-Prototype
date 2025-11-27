@@ -8,7 +8,7 @@ Programmer
 
 Interaction Designer
 • Daug, Orson Dave Vincent P. (crat-1)
-• Walog, Celizacarm Nicole (  )
+• Walog, Celizacarm Nicole (carm-28)
 • Sandigan, Kyne Johnrich M. (kynejohnsan)
 
 Asset Compilers
