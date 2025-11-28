@@ -26,3 +26,12 @@ INTRODUCTION
      Welcome to the Stratosphere! Our new application, "The Restful Realm," is taking the concept of a furniture store to the clouds.
 
      ​The team's objective is to prototype the complete Sign-In and multi-step Sign-Up user flow, ensuring a seamless journey to accessing our collection of "weightless wonders." This critical flow must include the standard credentials screen with a simulated "Forgot Passwor" link, and a minimum three-step registration process, complete with necessary validation checks to confirm our users' "Celestial Identities."
+
+TECHNOLOGY STACK
+
+    The prototype is built using a simple and responsive frontend. 
+    It focuses on clarity, usability, and smooth interaction.
+
+    • HTML5 – Provides the structure and layout of the pages.
+    • CSS3 – Handles styling, formatting, and responsive design.
+    • JavaScript – Adds interactivity and dynamic functionality to the interface.
