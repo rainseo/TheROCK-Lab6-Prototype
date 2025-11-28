@@ -24,7 +24,7 @@ Our new website, **The Restful Realm ☁**, is taking the concept of a furniture
 • Walog, Celizacarm Nicole <br>
 • Sandigan, Kyne Johnrich M.
 
-## TECHNOLOGY STACK
+## Technology Stack
 
 The prototype is built using a simple and responsive frontend. 
 It focuses on clarity, usability, and smooth interaction.
@@ -33,7 +33,7 @@ It focuses on clarity, usability, and smooth interaction.
 • **CSS3** – Handles styling, formatting, and responsive design. <br>
 • **JavaScript** – Adds interactivity and dynamic functionality to the interface. <br>
 
-## HOW TO RUN/COMPILE THE PROTOTYPE
+## How to Run/Open the Prototype
 1. Click this link to open the site: [The Restful Realm | GitHub Pages](https://rainseo.github.io/TheROCK-Lab6-Prototype/signin.html) <br>
 This will bring you directly to the Sign-Up page of the prototype.
 2. To test the sign-in page, enter these credentials:
