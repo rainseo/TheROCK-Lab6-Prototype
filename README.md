@@ -35,3 +35,12 @@ TECHNOLOGY STACK
     • HTML5 – Provides the structure and layout of the pages.
     • CSS3 – Handles styling, formatting, and responsive design.
     • JavaScript – Adds interactivity and dynamic functionality to the interface.
+
+HOW TO RUN/COMPILE THE PROTOTYPE
+1. Click this link to open the site: 
+	https://rainseo.github.io/TheROCK-Lab6-Prototype/signin.html
+This will bring you directly to the Sign-Up page of the prototype.
+2. To test the sign-in page, enter these credentials:
+	Email: user@example.com
+	Password: password123
+These credentials are provided specifically for prototype testing.
